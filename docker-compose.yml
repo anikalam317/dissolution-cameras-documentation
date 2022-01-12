@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  sphinx:
+    container_name: sphinx_html
+    build:
+      context: ./docs
+      dockerfile: Dockerfile
+    image: sphinxdoc/sphinx
+    ports:
+      - 8080:80
+    volumes:
+      - "${PWD}/docs/source:/etc/Sphinx/source"
+      - "${PWD}/pythonScripts:/etc/pythonScripts"
+
