@@ -7,4 +7,16 @@ To bring the system up and running simply point the repository folder within the
 ```
 docker-compose up --build
 ```
-Additional pages to the documentation, edits, etc. should automatically update on the HTML page.
+Additional pages to the documentation, edits, etc. will automatically update on the HTML page.
+
+The main folders that are monitor by the automated documentation are:
+- docs/source
+- pythonScripts
+
+This last one can be renamed and its name should be updated in the docker-compose.yml and sphinxConfig.yml
+If the conf.py is updated or some changes in the documentation is not appearing after refreshing the web browser, please consider restart the docker container.
+
+Finally, to bring the system up and running and dethatch it from the terminal run:
+```
+docker-compose up --build -d
+```
