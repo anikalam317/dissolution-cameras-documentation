@@ -18,7 +18,6 @@ The structure of the repository for the automated documentation is the following
 │   │   ├── ...
 |   │   └── markdownFile_n.rst
 │   ├── Dockerfile
-│   ├── Makefile
 │   ├── requirements.txt
 │   └── sphinxConfig.yml
 ├── pythonScripts (can be renamed)
