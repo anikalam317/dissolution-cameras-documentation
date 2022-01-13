@@ -46,7 +46,8 @@ extensions = ['sphinx.ext.viewcode',
               'sphinx.ext.autodoc', 
               'sphinx.ext.napoleon', 
               'sphinx.ext.autosectionlabel', 
-              'sphinx_rtd_theme']
+              'sphinx_rtd_theme',
+              'sphinx.ext.todo']
 
 
 # napoleon_google_docstring = True

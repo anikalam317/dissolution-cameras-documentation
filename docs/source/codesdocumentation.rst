@@ -31,8 +31,6 @@ The main routine within ``example_google.py`` is showed below:
 
 .. literalinclude:: ../../pythonScripts/example_google.py
    :language: python
-   :start-after: Main routine 
-
 
 Source Codes and Configurations
 ===============================

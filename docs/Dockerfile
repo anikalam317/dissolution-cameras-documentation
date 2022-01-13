@@ -1,20 +1,18 @@
-FROM alpine:latest
+FROM alpine:3.15.0
 
-RUN mkdir -p /etc/Sphinx/build
-RUN mkdir -p /etc/Sphinx/source
-RUN mkdir -p /etc/pythonScripts
+COPY requirements.txt /etc/
 
-ADD /source /etc/Sphinx/source
-ADD requirements.txt /etc
-ADD sphinxConfig.yml /etc
+RUN apk add --no-cache \
+    python3 make git py3-pip \
+    && mkdir -p \
+    /etc/Sphinx/build \
+    /etc/Sphinx/source \
+    /etc/pythonScripts \
+    && pip3 install -r /etc/requirements.txt
 
-WORKDIR /etc
+COPY sphinxConfig.yml /etc/
 
-RUN apk add --no-cache python3 make git py3-pip
+COPY /source /etc/Sphinx/source
 
-RUN pip3 install git+https://github.com/sphinx-doc/sphinx
-RUN pip3 install -r requirements.txt
-
-
-CMD sphinx-autobuild -b html --host 0.0.0.0 --port 80 /etc/Sphinx/source /etc/Sphinx/build
+CMD ["sphinx-autobuild", "-b", "html", "--host", "0.0.0.0", "--port","80", "/etc/Sphinx/source", "/etc/Sphinx/build"]
 
