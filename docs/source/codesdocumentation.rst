@@ -18,38 +18,46 @@ Classes and modules
 -------------------
 
 .. automodule:: api
-   :members: send_image
+   :members:
    :private-members:
    :special-members: __init__
 
-Source code
-------------
+.. autodecorator::
 
-.. literalinclude:: ../../pythonScripts/api.py
-   :language: python
+.. automodule:: dissocam
+   :members:
+   :private-members:
+   :special-members: __init__
+..
+    Source code
+    ------------
 
-Dissolution system library
-==========================
+    .. literalinclude:: ../../pythonScripts/api.py
+       :language: python
 
-Python source codes and dependencies
-------------------------------------
-This section includes all the source codes written in python language and their dependencies.
+..
+    Dissolution system library
+    ==========================
 
-``api.py``
-^^^^^^^^^^
+    Python source codes and dependencies
+    ------------------------------------
+    This section includes all the source codes written in python language and their dependencies.
 
-.. literalinclude:: ../../pythonScripts/api.py
-   :language: python
+    ``api.py``
+    ^^^^^^^^^^
 
-``dissocam.py``
-^^^^^^^^^^^^^^^
+    .. literalinclude:: ../../pythonScripts/api.py
+       :language: python
 
-.. literalinclude:: ../../pythonScripts/dissocam.py
-   :language: python
+    ``dissocam.py``
+    ^^^^^^^^^^^^^^^
 
-``helper_functions.py``
-^^^^^^^^^^^^^^^^^^^^^^^
+    .. literalinclude:: ../../pythonScripts/dissocam.py
+       :language: python
 
-.. literalinclude:: ../../pythonScripts/helper_functions.py
-   :language: python
+    ``helper_functions.py``
+    ^^^^^^^^^^^^^^^^^^^^^^^
+
+    .. literalinclude:: ../../pythonScripts/helper_functions.py
+       :language: python
 

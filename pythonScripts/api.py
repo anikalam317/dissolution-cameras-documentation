@@ -20,7 +20,7 @@ logger = helper_functions.setup_logger("dissocame.api")
 app.logger.setLevel(logging.DEBUG)
 
 
-disso = DissoCam.from_env_file("./.env")
+# disso = DissoCam.from_env_file()
 
 
 @app.route('/')

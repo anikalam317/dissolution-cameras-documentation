@@ -1,4 +1,4 @@
-import os
+import os 
 import yaml
 import json
 import paho.mqtt.client as mqtt
@@ -82,7 +82,7 @@ class DissoCam():
         to value "value"
 
         Arguments
-        kwargs (dict): dictionary of key state parameters to set
+            kwargs (dict): dictionary of key state parameters to set
         """
         self._state.update(kwargs)
 
