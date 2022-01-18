@@ -14,50 +14,36 @@ RESTful API
 ===========
 Below defines the endpoints of the dissolution system API.
 
-Classes and modules
--------------------
+API module
+----------
 
 .. automodule:: api
    :members:
    :private-members:
-   :special-members: __init__
+   :special-members:
 
-.. autodecorator::
+   .. autodecorator:: app
+
+``api.py``
+^^^^^^^^^^
+
+Dissocam module
+---------------
 
 .. automodule:: dissocam
    :members:
    :private-members:
    :special-members: __init__
-..
-    Source code
-    ------------
+   
+``dissocam.py``
+^^^^^^^^^^^^^^^
 
-    .. literalinclude:: ../../pythonScripts/api.py
-       :language: python
+---------------
 
-..
-    Dissolution system library
-    ==========================
+.. automodule:: helper_functions
+   :members:
+   :private-members:
+   :special-members:
 
-    Python source codes and dependencies
-    ------------------------------------
-    This section includes all the source codes written in python language and their dependencies.
-
-    ``api.py``
-    ^^^^^^^^^^
-
-    .. literalinclude:: ../../pythonScripts/api.py
-       :language: python
-
-    ``dissocam.py``
-    ^^^^^^^^^^^^^^^
-
-    .. literalinclude:: ../../pythonScripts/dissocam.py
-       :language: python
-
-    ``helper_functions.py``
-    ^^^^^^^^^^^^^^^^^^^^^^^
-
-    .. literalinclude:: ../../pythonScripts/helper_functions.py
-       :language: python
-
+``helper_functions.py``
+^^^^^^^^^^^^^^^^^^^^^^^
