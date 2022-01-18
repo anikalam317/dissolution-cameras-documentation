@@ -1,47 +1,55 @@
 .. toctree::
    :maxdepth: 3
 
-=========
-Myscripts
-=========
+===========
+API service
+===========
 
-The execution of the socket service for online, real-time application, is perfomed through a Docker container.
-In order to build and launch the container, the following commands must be executed within the folder (for Windows OS using PowerShell console)::
+The dissolution camera services expose a RESTful API to provide remote interactivity
+with multiple cameras from a single service API. The API service is containerized and
+orchestrated with an additional database container (to hold file information), and
+a web GIU.
 
-   docker build -t socket-service .
-
-The container can be stopped by executing the following command (for Windows OS using PowerShell console)::
-
-   docker stop $(docker ps -a -q --filter ancestor=socket_service)
-
-Example docstrings from Google
-==============================
+RESTful API
+===========
+Below defines the endpoints of the dissolution system API.
 
 Classes and modules
 -------------------
 
-.. automodule:: example_google
-   :members: 
+.. automodule:: api
+   :members: send_image
    :private-members:
    :special-members: __init__
 
-Main routine
+Source code
 ------------
-The main routine within ``example_google.py`` is showed below:
 
-.. literalinclude:: ../../pythonScripts/example_google.py
+.. literalinclude:: ../../pythonScripts/api.py
    :language: python
 
-Source Codes and Configurations
-===============================
+Dissolution system library
+==========================
 
 Python source codes and dependencies
 ------------------------------------
 This section includes all the source codes written in python language and their dependencies.
 
-``example_google.py``
-^^^^^^^^^^^^^^^^^^^^^
+``api.py``
+^^^^^^^^^^
 
-.. literalinclude:: ../../pythonScripts/example_google.py
+.. literalinclude:: ../../pythonScripts/api.py
+   :language: python
+
+``dissocam.py``
+^^^^^^^^^^^^^^^
+
+.. literalinclude:: ../../pythonScripts/dissocam.py
+   :language: python
+
+``helper_functions.py``
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. literalinclude:: ../../pythonScripts/helper_functions.py
    :language: python
 

@@ -1,4 +1,4 @@
-MyProject
+DissoCam
 *********
 
 .. toctree::
@@ -6,8 +6,7 @@ MyProject
    :caption: Table of Contents
     
    introduction
+   usage
    codesdocumentation
    references
    versionhistory
-   acronyms
-

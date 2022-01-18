@@ -23,7 +23,7 @@ with open(sphinxConfFile, "rt") as file_obj:
 sys.path.insert(0, os.path.abspath('_ext'))
 sys.path.insert(0, os.path.abspath('../../{}'.format(sphinxParameters['project']['scriptsFolder'])))
 
-#sys.setrecursionlimit(1500)
+# sys.setrecursionlimit(1500)
 
 # -- Project information -----------------------------------------------------
 
@@ -42,7 +42,7 @@ numfig = True
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.viewcode', 
+extensions = ['sphinx.ext.viewcode',
               'sphinx.ext.autodoc', 
               'sphinx.ext.napoleon', 
               'sphinx.ext.autosectionlabel', 

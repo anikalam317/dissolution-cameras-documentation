@@ -3,7 +3,19 @@
 Introduction
 ============
 
-This is a demo introduction which include also a random figure.
+The dissolution camera system employs a set of `smart cameras 
+<http://xeon/presentation/smart-camera>`_. that provide timelapse videos of
+dissolution experiments. The cameras are wirelessly interconnected to a server
+that synchronizes the operation (e.g. image resolution, capture frequency,
+start time, end time, meta data saved with picture, ...etc) of multiple cameras
+from a single web interface that can be accessed anywhere on the Pfizer
+network. Each camera is assigned a unique identification allowing cameras to
+added, removed, or substituted.  Moreover, a small camera-to-network module
+allows the cameras to communicate with other equipment on the Pfizer network,
+such that the camera's operation can be started/stopped based on signals from
+external equipment. Lastly, the cameras can be fitted with a number of
+different lens systems, providing various levels of magnifiation, field of
+vision, and wavelength detection range.
 
 .. figure:: _static/Fig1.png
    :width: 300px

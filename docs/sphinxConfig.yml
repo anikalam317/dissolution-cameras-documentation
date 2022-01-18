@@ -1,6 +1,6 @@
 project:
-    name: MyProjectName
+    name: DissoCam
     copyright: 2022
-    authors: 'J. Doe'
+    authors: 'Brent Maranzano, Andy Blanchard'
     release: 0.1
     scriptsFolder: pythonScripts
