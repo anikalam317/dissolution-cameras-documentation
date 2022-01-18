@@ -20,7 +20,7 @@ logger = helper_functions.setup_logger("dissocame.api")
 app.logger.setLevel(logging.DEBUG)
 
 
-disso = DissoCam.from_env_file()
+disso = DissoCam.from_env_file("./.env")
 
 
 @app.route('/')
@@ -31,9 +31,9 @@ def index():
 def send_image(number, position):
     """Send the image of the camera attached to a vessel.
 
-    Arguments
-    number (int): Vessel number (e.g. 01, 02, 03, ...etc)
-    pos (str): Vessel position ("top" | "bottom")
+    Arguments:
+        number (int): Vessel number (e.g. 01, 02, 03, ...etc)
+        pos (str): Vessel position ("top" | "bottom")
     """
     path = f"/camera_files/vessel{number.zfill(2)}-{position}/preview/preview.jpg"
     file_type = ""
